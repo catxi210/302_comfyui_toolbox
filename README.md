@@ -59,10 +59,10 @@ Supports batch upload and processing of images to improve work efficiency.
 
 ## Development & Deployment
 1. Clone project `git clone https://github.com/302ai/302_comfyui_toolbox`
-2. Install dependencies `npm`
+2. Install dependencies `pnpm i`
 3. Configure 302's API KEY (refer to .env.example)
-4. Run project `npm run dev`
-5. Build and deploy `docker build -t comfyui_toolbox . && docker run -p 3000:80 comfyui_toolbox`
+4. Run project `pnpm dev`
+5. Build and deploy `pnpm build -t comfyui_toolbox . && docker run -p 3000:80 comfyui_toolbox`
 6. Node version 20 or above required
 
 ## ✨ About 302.AI ✨
