@@ -1,8 +1,70 @@
-# 302 Starter 🚀
+# <p align="center"> 🎨 ComfyUI工具箱 🚀✨</p>
 
-[English](./README.md) | 简体中文 | [日本語](./README_ja.md)
+<p align="center">ComfyUI工具箱通过复杂工作流实现多种商用级的变换效果，包括换装、换脸、换任意物品、动漫换真人、风格迁移以及生成模特视频。</p>
 
-一个基于 Next.js 14 的现代化 Web 应用程序启动模板，集成了最新的前端技术栈和最佳实践。
+<p align="center"><a href="https://302.ai/tools/comfytools/" target="blank"><img src="https://file.302.ai/gpt/imgs/github/20250102/72a57c4263944b73bf521830878ae39a.png" /></a></p >
+
+<p align="center"><a href="README_zh.md">中文</a> | <a href="README.md">English</a> | <a href="README_ja.md">日本語</a></p>
+
+![](docs/302_ComfyUI_Toolbox.png)
+
+来自[302.AI](https://302.ai)的[ComfyUI工具箱](https://302.ai/tools/comfytools/)的开源版本。你可以直接登录302.AI，零代码零配置使用在线版本。或者对本项目根据自己的需求进行修改，传入302.AI的API KEY，自行部署。
+
+## 界面预览
+选择操作方式（标签/涂抹），上传进行换装的模特图和目标服装图，即可根据选择的标签或涂抹范围实现商用级的换装效果。
+![](docs/302_ComfyUI_Toolbox_screenshot_01.png)
+![](docs/302_ComfyUI_Toolbox_screenshot_02.png)
+
+上传进行换脸操作的模特图和目标脸部模特图，即可通过comfyUI复杂工作流实现商用级的换脸效果。
+![](docs/302_ComfyUI_Toolbox_screenshot_03.png)  
+
+选择操作方式（文字/涂抹），上传进行换物操作的图片和目标物品图，即可根据文字描述或涂抹范围实现商用级的换物效果。
+![](docs/302_ComfyUI_Toolbox_screenshot_04.png)  
+![](docs/302_ComfyUI_Toolbox_screenshot_05.png) 
+
+上传一张漫画风格的图片，选择更换的人种，即可通过comfyUI复杂工作流实现商用级的漫画变真人效果，也可将服装设计图转为真人模特图。
+![](docs/302_ComfyUI_Toolbox_screenshot_06.png)  
+
+上传进行操作的图片和风格迁移的图片，即可通过comfyUI复杂工作流实现商用级的风格迁移效果。
+![](docs/302_ComfyUI_Toolbox_screenshot_07.png)    
+
+上传人物模特图并设置一系列参数，即可通过comfyUI复杂工作流生成商用级的模特视频。
+![](docs/302_ComfyUI_Toolbox_screenshot_08.png)  
+
+以下是图片转换的效果比对图。
+![](docs/302_ComfyUI_Toolbox_screenshot_09.jpg)   
+![](docs/302_ComfyUI_Toolbox_screenshot_10.jpg)   
+
+## 项目特性
+### 🎨 高级图像处理
+支持换装、换脸、换物、动漫真人化等多种高级图像处理功能。
+### 🎥 高级视频处理
+支持生成人物模特视频，让图片里的人物动起来。
+### 🔄 实时预览
+所有操作均支持实时预览效果。
+### 📊 批量处理
+支持批量上传和处理图片,提高工作效率。
+### 🌍 多语言支持
+  - 中文界面
+  - English Interface
+  - 日本語インターフェース
+
+## 🚩 未来更新计划
+- [ ] 新增更多图片转换类型
+
+## 🛠️ 技术栈
+- React
+- Tailwind CSS
+- Shadcn UI
+
+## 开发&部署
+1. 克隆项目 `git clone https://github.com/302ai/302_comfyui_toolbox`
+2. 安装依赖 `npm`
+3. 配置302的API KEY 参考.env.example
+4. 运行项目 `npm run dev`
+5. 打包部署 `docker build -t comfyui_toolbox . && docker run -p 3000:80 comfyui_toolbox`
+6. node版本为20及以上
+
 
 ## ✨ 302.AI介绍 ✨
 [302.AI](https://302.ai)是一个按需付费的AI应用平台，为用户解决AI用于实践的最后一公里问题。
@@ -12,147 +74,3 @@
 4. 🛠 功能强大的管理后台，面向团队和中小企业，一人管理，多人使用。
 5. 🔗 所有AI能力均提供API接入，所有工具开源可自行定制（进行中）。
 6. 💡 强大的开发团队，每周推出2-3个新应用，产品每日更新。有兴趣加入的开发者也欢迎联系我们
-
-## 📖 项目介绍
-
-这是一个功能丰富的 Next.js 启动模板，采用了 App Router 架构，集成了302AI鉴权、国际化、主题切换、表单处理等多个实用功能。项目使用 TypeScript 开发，确保了代码的类型安全性和可维护性。
-
-## 📁 项目结构
-
-```
-src/
-├── actions/      # 服务器操作
-├── api/          # API 路由
-├── app/          # Next.js 应用路由
-├── components/   # React 组件
-├── constants/    # 常量定义
-├── hooks/        # 自定义 React Hooks
-├── i18n/         # 国际化配置
-├── lib/          # 工具库
-├── services/     # 服务层
-├── stores/       # 状态管理
-├── styles/       # 样式文件
-└── utils/        # 工具函数
-```
-
-## 🛠️ 技术栈
-
-- **框架**: Next.js 14
-- **语言**: TypeScript
-- **样式**: TailwindCSS
-- **UI组件**: Radix UI
-- **状态管理**: Jotai
-- **表单处理**: React Hook Form
-- **HTTP客户端**: ky
-- **国际化**: next-intl
-- **主题**: next-themes
-- **代码规范**: ESLint, Prettier
-- **提交规范**: Husky, Commitlint
-
-## 🚀 安装与启动
-
-### ⚙️ 环境要求
-
-- Node.js 18.17 或更高版本
-- pnpm 8.0 或更高版本
-
-### 📥 安装步骤
-
-1. 克隆项目
-```bash
-git clone [项目地址]
-cd 302-starter
-```
-
-2. 安装依赖
-```bash
-pnpm install
-```
-
-3. 环境配置
-```bash
-cp .env.example .env.local
-```
-根据需要修改 `.env.local` 中的环境变量。
-
-4. 启动开发服务器
-```bash
-pnpm dev
-```
-
-5. 构建生产版本
-```bash
-pnpm build
-pnpm start
-```
-
-## ✨ 主要功能
-
-- 🔐 302AI鉴权系统
-- 🌐 国际化支持
-- 🎨 明暗主题切换
-- 📝 表单验证和处理
-- 🔒 类型安全的 API 调用
-- 📦 模块化的组件库
-- 🚀 优化的构建配置
-- 🔧 完整的开发工具链
-
-## 📐 代码规范
-
-项目使用 ESLint 和 Prettier 进行代码格式化和规范检查：
-
-- ✅ ESLint: 代码质量检查
-- 🎨 Prettier: 代码格式化
-- 🔄 Husky: Git hooks
-- 📝 Commitlint: 提交信息规范
-
-运行代码检查：
-```bash
-pnpm lint
-```
-
-## 🤝 贡献指南
-
-1. Fork 项目
-2. 创建特性分支 (`git checkout -b feature/AmazingFeature`)
-3. 提交更改 (`git commit -m 'Add some AmazingFeature'`)
-4. 推送到分支 (`git push origin feature/AmazingFeature`)
-5. 提交 Pull Request
-
-### 📝 提交规范
-
-项目使用 [Conventional Commits](https://www.conventionalcommits.org/) 规范，提交信息格式如下：
-
-```
-type(scope): description
-
-[optional body]
-
-[optional footer]
-```
-
-常用的 type 类型：
-- ✨ feat: 新功能
-- 🐛 fix: 修复
-- 📚 docs: 文档更新
-- 💄 style: 代码格式
-- ♻️ refactor: 重构
-- ✅ test: 测试
-- 🔧 chore: 构建过程或辅助工具的变动
-
-## ❓ 常见问题
-
-### Q: 如何添加新的语言支持？
-A: 在 `messages` 目录下添加对应语言的翻译文件，并在 `constants/values.ts` 中配置。
-
-### Q: 如何自定义主题？
-A: 修改 `tailwind.config.ts` 文件中的主题配置。
-
-## 💬 技术支持
-
-- 🐛 提交 Issue
-- 📧 联系维护团队
-
-## 📄 许可证
-
-本项目采用 MIT 许可证 - 查看 [LICENSE](LICENSE) 文件了解详情。
